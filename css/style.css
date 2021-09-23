@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('./colores.css');
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 1;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #1f11e6;
+  }
+  
+  .topnav a.active {
+    background-color: #7faeeb;
+    color: white;
+  }
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+.pattern{
+    position: absolute;
+    left: 20%;
+    width: 30%;
+    height: 100vh;
+    background:  no-repeat 50% 50%;
+    z-index: -1;
+    opacity: .1;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+}
+.logo{
+    font-size: 18px;
+    margin: 0.2em 2em;
+    line-height: 80px;
+    position: absolute;
+}
+.menu{
+    position: relative;
+    height: 0px;
+    right: 0px;
+    z-index: 1;
+    
+}
+.menu ul{
+    list-style: none;
+    background-color: rgba(18, 69, 236, 0.507);
+}
+.menu ul li {
+    display: inline-block;
+    margin: 0.4em 0;
+    padding: 0 40px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.cart{
+    position: fixed;
+    font-size: 16px;
+    margin: 0.2em 1em;
+    line-height: 80px;
+    right: 20px;
+}
+.box-1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: none;
+    border: 3px solid var(--colorFiguras);
+    top: 10%;
+    left: 16%;
+    z-index: -1;
+}
+.box-2{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background: none;
+    /* border: 5px solid #f5c3af; */
+    top: 60%;
+    left: 35%;
+    z-index: -1;
+}
+.box-3{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: none;
+    border: 4px solid var(--colorFiguras);
+    top: 25%;
+    left: 90%;
+    z-index: -1;
+}
+.runner img{
+    width: 100%;
+    z-index: -1;
+    margin-top: 0px;
+    opacity: 20%;
+}
+.title-2{
+    position: absolute;
+    top: 32%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-family:fantasy;
+    font-size: 100px;
+    color: var(--colorTitulo2);
+    font-style: unset;
+    text-transform: uppercase;
+    z-index: 1;
+    -webkit-text-stroke: 1px var(--colorTitulo2);
+    opacity: 0;
+}
+.title-1{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-family:fantasy;
+    font-size: 100px;
+    color: var(--colorTitulo1);
+    padding-right: 20px;
+    font-style:unset;
+    text-transform: uppercase;
+    z-index: 1;
+    -webkit-text-stroke: 1.5px var(--colorTitulo1);
+    opacity: 0;
+}
+.content{
+    position: absolute;
+    top: 78%;
+    left: 10%;
+    width: 86%;
+    color: var(--colorTexto);
+    font-weight:bold;
+    font-size: 34px;
+    line-height: 24px;
+}
+button{
+    margin-top: 0px; 
+    background: var(--colorBoton);
+    color: var(--colorTexto);
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+    border:#333333;
+    cursor: pointer;
+}
+.media{
+    position: absolute;
+    top: 74%;
+    
+}
+.media ul li{
+    cursor: pointer;
+    list-style: none;
+    color: var(--colorTexto);
+    padding: 10px 0;
+}
+
+@media(max-width:900px){
+    .pattern{
+        left: 0;
+        width: 40%;
+    }
+    .runner img{
+        position: absolute;
+        bottom: 15px;
+        left: -860px;
+        width: 1500px;
+    }
+    .title-1, .title-2{
+        display: none;
+    }
+    .title-1{
+        left: 20%;
+        top: 40%;
+    }
+    .title-2{
+        left: 50%;
+        z-index: 1;
+    }
+    .menu{
+        display: none;
+    }
+    .content p{
+        display: none;
+    }
+    .box{
+        display: none;
+    }
+    .content button{
+        position: fixed;
+        right: 3em;
+        bottom: 4em;
+        z-index: 1;
+    }
+}

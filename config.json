@@ -1,0 +1,58 @@
+{
+    "Header":{
+        "Logos":[
+            {
+                "Nombre": "ion-icon",
+                "Valor" : ""
+            },
+            {
+                "Nombre": "ion-icon",
+                "Valor" : ""
+            }
+        ],
+        "Menu":[
+            {
+                "Nombre": "Inicio",
+                "Valor": "#"
+            },
+            {
+                "Nombre": "Quienes Somos",
+                "Valor": "#"
+            },
+            {
+                "Nombre": "Contactenos",
+                "Valor": "#"
+            },
+            {
+                "Nombre": "Blog",
+                "Valor": "#"
+            }
+        ]
+    },
+    "Autor":{
+        "Titulo-1": "Cuidado Automotriz",
+        "Titulo-2": "Red"
+    },
+    "Texto":{
+        "Parrafo": "Su Vehículo Confiable, Seguro y con un Mantenimiento Óptimo.",
+        "Boton": "Siguiente"
+    },
+    "Footer":[
+        {
+            "Nombre": "ion-icon",
+            "Valor" : "logo-facebook"
+        },
+        {
+            "Nombre": "ion-icon",
+            "Valor" : "logo-instagram"
+        },
+        {
+            "Nombre": "ion-icon",
+            "Valor" : "logo-twitch"
+        },
+        {
+            "Nombre": "ion-icon",
+            "Valor" : "logo-youtube"
+        }
+    ]
+}
